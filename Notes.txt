@@ -1,0 +1,9 @@
+Files to edit:
+
+producer_server.py
+data_stream.py
+kafka_server.py
+
+The following file should be created separately for you to check if your kafka_server.py is working properly:
+
+consumer_server.py
