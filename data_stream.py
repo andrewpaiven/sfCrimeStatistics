@@ -12,7 +12,7 @@ schema = StructType([StructField("crime_id", StringType(), True),
                      StructField("call_date", StringType(), True),
                      StructField("offense_date", StringType(), True),
                      StructField("call_time", StringType(), True),
-                     StructField("call_date_time", StringType(), True),
+                     StructField("call_date_time", TimestampType(), True),
                      StructField("disposition", StringType(), True),
                      StructField("address", StringType(), True),
                      StructField("city", StringType(), True),
@@ -66,8 +66,7 @@ def run_spark_job(spark):
         .writeStream \
         .format("console") \
         .outputMode("complete") \
-        .start() \
-        .awaitTermination() \
+        .start()
 
     # TODO attach a ProgressReporter
     query.awaitTermination()
@@ -95,6 +94,7 @@ if __name__ == "__main__":
     # TODO Create Spark in Standalone mode
     spark = SparkSession \
         .builder \
+        .config("spark.ui.port", 3000) \
         .master("local[*]") \
         .appName("KafkaSparkStructuredStreaming") \
         .getOrCreate()
