@@ -34,7 +34,7 @@ In order to see data flowing through kafka, you can connect to the kafka docker 
 Run the following command:
 ```spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.4 --master local[*] data_stream.py```
 
-###Step 3 questions:
+### Step 3 questions:
 
 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
 
