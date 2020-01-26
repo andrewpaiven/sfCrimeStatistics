@@ -1,8 +1,8 @@
-#Udacity Data Streaming Nanodegree
+# Udacity Data Streaming Nanodegree
 
-##Project 2 - SF Crime Statistics
+## Project 2 - SF Crime Statistics
 
-###Requirements
+### Requirements
 
 - Spark 2.4.3
 - Scala 2.11.x
@@ -11,7 +11,7 @@
 - Python 3.6.x or 3.7
 - Docker and docker-compose
 
-###How to run this project
+### How to run this project
 
 #### Starting Kafka
 1. Open a terminal and run on this folder: ```docker-compose up``` to start Kafka and Zookeeper. Wait a bit until kafka and zookeeper start
