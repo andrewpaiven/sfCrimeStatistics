@@ -1,8 +1,8 @@
-#Udacity Data Streaming Nanodegree
+# Udacity Data Streaming Nanodegree
 
-##Project 2 - SF Crime Statistics
+## Project 2 - SF Crime Statistics
 
-###Requirements
+### Requirements
 
 - Spark 2.4.3
 - Scala 2.11.x
@@ -11,7 +11,7 @@
 - Python 3.6.x or 3.7
 - Docker and docker-compose
 
-###How to run this project
+### How to run this project
 
 #### Starting Kafka
 1. Open a terminal and run on this folder: ```docker-compose up``` to start Kafka and Zookeeper. Wait a bit until kafka and zookeeper start
@@ -34,7 +34,7 @@ In order to see data flowing through kafka, you can connect to the kafka docker 
 Run the following command:
 ```spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.4 --master local[*] data_stream.py```
 
-###Step 3 questions:
+### Step 3 questions:
 
 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
 
